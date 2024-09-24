@@ -1,0 +1,10 @@
+my_number = 7           #DecLaration: Creating
+my_number = 5           #Assignment: Changing
+print(my_number)
+print(my_other_number)
+
+entry = input("Enter Something\n")
+print(entry)
+print(10)
+
+word_one = input()
