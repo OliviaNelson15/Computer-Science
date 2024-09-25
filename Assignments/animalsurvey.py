@@ -15,4 +15,4 @@ user_input4 = input ("What is a fun fact about them?")
 print("You entered: " + user_input4)
 
 
-print(user_input + user_input2 + user_input3 + user_input4)
+print("Your favorite animal is user_input because:" user_input + user_input2 + user_input3 + user_input4)
