@@ -47,7 +47,7 @@ def thestreet():
 
 #3
 def downtown():
-    print("You give the shady-looking man $200. He chuckles to himself. 'Thanks, man...' and then he walks away. It seems you've been BAMBOOZLED... that's okay, though. The show must go on!")
+    print("You give the shady-looking man $200. He chuckles to himself. 'Thanks, man...' and then he walks away. It appears you've been scammed... that's okay, though. The show must go on!")
     print("You can either chase the theif to try and get your money back, or you can stop for some lunch. What do you choose?:")
     print("1. Let's stop for some lunch. I'm hungry!\n")
     print("2. I'm not gonna let him baguette away with this!\n")
@@ -127,7 +127,72 @@ def checkingthecameras1():
         checkingthecameras1()
 
 def checkingthecameras2():   #The mirror store version.
-    print("You decide the check the cameras and see ")
+    print("You decide the check the cameras and see the bandit talking to someone, whom you immediately recognize as one of his old associates who had recently escaped from prison. The Bandit hands him a slip of paper. When they exit the store, you notice that the man had accidentally dropped the peice of paper. Do you:")
+    print("1. Head to the section of the store where the paper was dropped\n")
+    print("2. Continue watching the footage... you have an uneasy feeling...\n")
+
+    choice = input(">")
+    if choice == "1":
+        print("When you go to the section of the store where you had seen the Bandit talking to the other man, you find the paper still lying on the ground and pick it up. You then notice the front doors slide open. The two were back. They must have realized that they had dropped the peice of paper. They notice you holding it. The Bandit's friend pulls out a gun and shoots you. Game over. Try again.")
+        BreadySetGo()
+    elif choice == "2":
+        ("You decide to wait a little bit. Something tells you it's not safe to go back into the main area of the store. You continue watching the cameras. Suddenly, both the Bandit and his friend walk back into the store and begin to look for something. They return to the section of the store they had previously been in. They find the peice of paper and pick it up. Then they leave again. You walk out of the store to see where they went, when suddenly a mysterious woman approaches you. She has long, blond hair and is wearing sunglasses. She tells you that she knows where the Bandit went, and she can take you to him.")
+        mysteriouslady()
+    else:
+        print("Invalid response. Try again.")
+        checkingthecameras2()
+
+def mysteriouslady():
+    print("The woman waits for your response. Do you:")
+    print("1. Agree to follow her\n")
+    print("2. Tell her that she sounds like a man\n")
+
+    choice = input(">")
+    if choice == "1":
+        print("You agree to follow the woman. The two of you arrive at a shady-looking house on the far side of town. You enter the house.")
+        insidethehouse()
+    elif choice == "2":
+        print("You tell the woman that she sounds like a man. She gets offended and slaps you across the face. She then turns and walks away. You yell after her, 'Wait! I'm sorry!'. The woman sighs and turns around. 'Follow me,' she says. You follow her to the far side of town, and the two of yoy stop in front of a shady-looking house. 'He's in there,' the woman tells you. You enter the house.")
+        insidethehouse()
+    else:
+        print("Invalid response. Please try again.")
+        mysteriouslady()
+
+def insidethehouse():
+    print("Once you're in the house, you turn around, but the woman is gone. You decide to look for the Bandit. Do you:")
+    print("1. Go into the living room\n")
+    print("2. Go into the basement\n")
+
+    choice = input(">")
+    if choice == "1":
+        print("You decide to check the living room first. You see some nerdy'lloking guy playing Elden Ring on a PS5. You walk up to him and realize that it's Mr. Osowski. 'Mr. Osowski!? What are you doing here!?' you ask. 'The Bandit kidnapped me,' he replies. You give him a confused look. 'The door is right there. You can literally just get up and leave,' you say. 'But I'm busy playing Elden Ring!' He responds. You shake your head and then facepalm.")
+        mrosowski()
+    elif choice == "2":
+        print("You go into the basement, however, the Bandit is waiting for you. You see the bodies of a bunch of dead bakers. You manage to escape the house, but that sight will haunt you for the rest of your life. You got the BAD ending. Try again!")
+        BreadySetGo()
+    else:
+        print("Invalid response. Please try again.")
+        insidethehouse()
+
+def mrosowski():
+    print("You think you might be able to convince Mr. Osowski to help you. Do you:")
+    print("1. Tell him Elden Ring is trash and that Fortnite is better.\n")
+    print("2. Tell Mr. Osowski that if he helps you find the Bandit, you will give him a special, secret, limited edition, unreleased sequel of Elden Ring.\n")
+
+    choice = input(">")
+    if choice == "1":
+        print("Mr Osowski gasps dramatically. 'HOW DARE YOU!!!' He yells into the next room. 'BANDIT!!! There's a detective here! They're trying to arrest you! GET 'EM!!! Suddenly, the Bandit runs into the room with a knife. You panic. 'WAIT!!! I WAS JUST KIDDING!!! ELDEN RING IS GOATED!!!' The Bandit stops and looks over at Mr. Osowski. The next thing you know, you're all taking turns playing Elden Ring. The end? You got the ELDEN RING ending. Want to play again?")
+        BreadySetGo()
+    elif choice == "2":
+        print("Mr. Osowski immediately agrees, and you decide to go to the basment. Before you can begin to walk down the stairs, however, Mr. Osowski warns you that the Bandit is waiting for them, and he has a knife. He offers to distract the Bandit with a smoke bomb. You nod, and the two of you enter the basement.")
+        thebasement()
+    else:
+        print("invalid response. Please try again.")
+        mrosowski()
+
+
+
+    
 
 
 
