@@ -190,9 +190,62 @@ def mrosowski():
         print("invalid response. Please try again.")
         mrosowski()
 
+def thebasement():
+    print("Mr. Osowski agrees to help you. You decide to go into the basement. He warns you that the bandit is hiding down there with a knife, waiting for you. He offers to distract him. You walk to the bottom of the stairs. Mr. Osowski throws a smoke bomb into the basement. Nothing happens. Confused, you enter the basement. Suddenly, the blond woman from earlier walks down the stairs and startles you. Do you:")
+    print("1. Panic and throw a donut at her\n")
+    print("2. Panic and throw Mr. Osowski at her\n")
 
+    choice = input(">")
+    if choice == "1":
+        print("The donut does absolutely nothing. The woman gets angry and stabs you. CONGRATS, you died! But don't worry, I'm gonna let you try again. It's the yeast I can do.")
+        BreadySetGo()
+    elif choice == "2":
+        print("You pick up Mr. Osowski and throw him at her, causing her sunglasses and wig to fall off. Mr. Osowski is mad at you. 'YOU JERK!' He yells.")
+        shesaman()
 
+    else:
+        print("Invalid response. Please try again.")
+        thebasement()
+
+def shesaman():
+    print("That's when you notice the sunglasses and wig lying on the ground. The person looks up at you, and you realize that he has yellow eyes and dark brown hair. That's right, folks... SHE'S A MAN!!! *Insert dramatic music* Do you:")
+    print("1. Attempt to fight the Bandit\n")
+    print("2. Run for the door\n")
+
+    choice = input(">")
+    if choice == "1":
+        print("You run towards the Bandit and immediately get stabbed in the stomach. Yeah... you never stood a chance. You're toast. (Literally.) Try again!")
+        BreadySetGo()
+
+    elif choice == "2":
+        print("You and Mr. Osowski run for the door and back up the stairs into the living room. The door is boarded up. You hear the bandit running up the basement stairs behind you. 'Let's go upstairs. I'm sure there's something we can use to fight him,' you say. You see Mr. Osowski trying to drag the PS5 up the stairs. You let out an exasperated sigh and yell, 'WE DON'T HAVE TIME TO PLAY ELDEN RING!!!'. You grab his arm and run upstairs.")
+        thediary()
+
+    else:
+        print("Invalid response. Please try again.")
+        shesaman()
+
+def thediary():
+    print("You manage to baracade yourselves in a small office. You look and see a diary on the desk. Do you:")
+    print("1. Read the diary.\n")
+    print("2. Leave it be.\n")
+
+    choice = input(">")
+    if choice == "1":
+        print("You open up the diary and start to read about how the bandit used to attend baking school. You read that he was never very good at baking and got bullied for it by the other chefs. If fact, his cooking sucked SO BADLY that he got kicked out. He decided that if he didn't get a chance to be a good baker, then nobody else should, either. That's why he does what he does. Stealing bread, killing bakers and using their remains to bake make bread, etc. You decide to take the diary to use as evidence. Suddenly, you see a crowbar near the door.")
+        escaping()
     
+    elif choice == "2":
+        print("You decide not to read the diary, however you still pick it up to see if you can use it as evidence. Something in the corner of the room catches your eye. You see a crowbar near the door.")
+        escaping()
+    else:
+        print("Invalid response. Please try again.")
+        thediary()
+
+def escaping():
+    print("You pick up the crowbar, quickly open the door, and hit the Bandit in the head. He passes out. You run back downstairs and into the living room. You use the crowbar to remove the planks from the door. You open it and wait for Mr. Osowski. Mr. Osowski pick up his PS5 and runs out the door with you. You can choose to either run across the road for help or run into a creepy, shady-looking alleyway to hide. Do you:")
+    
+
 
 
 
