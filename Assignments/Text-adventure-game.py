@@ -22,7 +22,7 @@ def BreadySetGo():
         thestreet()
     elif choice == "2":
         print("'What a shame... we were told you were the best. Clearly we were mistaken.' GAME OVER. You got fired, and your reputation was destroyed. Try again!")
-        
+        BreadySetGo()
     else:
         print("Invalid response. Please try again.")
         BreadySetGo()
@@ -39,6 +39,8 @@ def thestreet():
 
     elif choice == "2":
         print("'What a shame... JUMP 'EM, BOYS!!!' Suddenly, you see a bunch of people running at you. They steal everything you have and then run off... You got jumped. Game over. Try again. Bready, set, go!")
+        BreadySetGo()
+
     else:
         print("Invalid response. Please try again.")
         thestreet()
@@ -57,6 +59,7 @@ def downtown():
         Eavesdropping()
     elif choice == "2":
         print("You go after the theif, but he's long gone. You decide to walk further downtown to try to get more answers.")
+        Eavesdropping()
     else:
         print("Invalid response. Please try again.")
         downtown()
@@ -136,7 +139,7 @@ def checkingthecameras2():   #The mirror store version.
         print("When you go to the section of the store where you had seen the Bandit talking to the other man, you find the paper still lying on the ground and pick it up. You then notice the front doors slide open. The two were back. They must have realized that they had dropped the peice of paper. They notice you holding it. The Bandit's friend pulls out a gun and shoots you. Game over. Try again.")
         BreadySetGo()
     elif choice == "2":
-        ("You decide to wait a little bit. Something tells you it's not safe to go back into the main area of the store. You continue watching the cameras. Suddenly, both the Bandit and his friend walk back into the store and begin to look for something. They return to the section of the store they had previously been in. They find the peice of paper and pick it up. Then they leave again. You walk out of the store to see where they went, when suddenly a mysterious woman approaches you. She has long, blond hair and is wearing sunglasses. She tells you that she knows where the Bandit went, and she can take you to him.")
+        print("You decide to wait a little bit. Something tells you it's not safe to go back into the main area of the store. You continue watching the cameras. Suddenly, both the Bandit and his friend walk back into the store and begin to look for something. They return to the section of the store they had previously been in. They find the peice of paper and pick it up. Then they leave again. You walk out of the store to see where they went, when suddenly a mysterious woman approaches you. She has long, blond hair and is wearing sunglasses. She tells you that she knows where the Bandit went, and she can take you to him.")
         mysteriouslady()
     else:
         print("Invalid response. Try again.")
@@ -165,10 +168,10 @@ def insidethehouse():
 
     choice = input(">")
     if choice == "1":
-        print("You decide to check the living room first. You see some nerdy'lloking guy playing Elden Ring on a PS5. You walk up to him and realize that it's Mr. Osowski. 'Mr. Osowski!? What are you doing here!?' you ask. 'The Bandit kidnapped me,' he replies. You give him a confused look. 'The door is right there. You can literally just get up and leave,' you say. 'But I'm busy playing Elden Ring!' He responds. You shake your head and then facepalm.")
+        print("You decide to check the living room first. You see some nerdy-looking guy playing Elden Ring on a PS5. You walk up to him and realize that it's Mr. Osowski. 'Mr. Osowski!? What are you doing here!?' you ask. 'The Bandit kidnapped me,' he replies. You give him a confused look. 'The door is right there. You can literally just get up and leave,' you say. 'But I'm busy playing Elden Ring!' He responds. You shake your head and then facepalm.")
         mrosowski()
     elif choice == "2":
-        print("You go into the basement, however, the Bandit is waiting for you. You see the bodies of a bunch of dead bakers. You manage to escape the house, but that sight will haunt you for the rest of your life. You got the BAD ending. Try again!")
+        print("You go into the basement, however, the Bandit is waiting for you. You see the bodies of a bunch of dead bakers. You manage to escape the house, but that sight will haunt you for the rest of your life. You got the BAD ENDING. Try again!")
         BreadySetGo()
     else:
         print("Invalid response. Please try again.")
@@ -229,7 +232,7 @@ def thediary():
     print("You manage to baracade yourselves in a small office. You look and see a diary on the desk. Do you:")
     print("1. Read the diary.\n")
     print("2. Leave it be.\n")
-
+#Choosing not to read the diary will not effect the outcome in any way, but the player will not know the villain's backstory unless they read it.
     choice = input(">")
     if choice == "1":
         print("You open up the diary and start to read about how the bandit used to attend baking school. You read that he was never very good at baking and got bullied for it by the other chefs. If fact, his cooking sucked SO BADLY that he got kicked out. He decided that if he didn't get a chance to be a good baker, then nobody else should, either. That's why he does what he does. Stealing bread, killing bakers and using their remains to bake make bread, etc. You decide to take the diary to use as evidence. Suddenly, you see a crowbar near the door.")
@@ -243,10 +246,23 @@ def thediary():
         thediary()
 
 def escaping():
-    print("You pick up the crowbar, quickly open the door, and hit the Bandit in the head. He passes out. You run back downstairs and into the living room. You use the crowbar to remove the planks from the door. You open it and wait for Mr. Osowski. Mr. Osowski pick up his PS5 and runs out the door with you. You can choose to either run across the road for help or run into a creepy, shady-looking alleyway to hide. Do you:")
-    
+    print("You pick up the crowbar, quickly open the door, and hit the Bandit in the head. He passes out. You run back downstairs and into the living room. You use the crowbar to remove the planks from the door. You open it and wait for Mr. Osowski. Mr. Osowski pick up his PS5 and runs out the door with you. It's dark outside. You can choose to either run across the road for help or run into a creepy, shady-looking alleyway to hide. Do you:")
+    print("1. Run across the road\n")
+    print("2. Run into the creepy alleyway\n")
 
-
+    choice = input(">")
+    if choice == "1":
+        print("You forgot to look both ways and got run over by a car... nice going. Try again!")
+        BreadySetGo()
+    elif choice == "2":
+        print("You run into the alleyway and reach a dead end. You hear the Bandit yelling. He must have woken up. He turns the corner to find you and Mr. Osowski. You're getting ready to fight the Bandit when suddenly, you hear someone yell, 'JUMP 'EM, BOYS!!!' The shady-looking guy who you had given your money to all those hours ago was back, and he had his squad with him. They jumped the Bandit and beat him until he was unconscious. You handcuff the Bandit and call the station to come and take him away. The shady-looking guy, who turns out to be a guy named Sam, thanks you for the money you had given him and explained that it had really helped him and his guys out. After they leave, Mr. Osowski asks for his limited-edition copy of Elden Ring. You tell him that you lied to him, but still offer to buy him all the donuts he wants. He agrees, and the nightmare is finally over. You survived. You got the GOOD ENDING. Congrats! If you want, you can play again. Try to get all of the endings!")
+        BreadySetGo()
+    else:
+        print("Invalid response. Please try again.")
+        escaping()
 
 
 BreadySetGo()
+
+
+#Thanks for playing! I really hope you enjoyed the game! :)
