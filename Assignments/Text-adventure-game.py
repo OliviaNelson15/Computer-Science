@@ -10,6 +10,15 @@
 #You let your guard down... you're toast. Try again!
 #Try again! Bready, set, go!
 
+#Endings:
+
+#Good ending
+#Bad ending
+#Elden Ring ending
+#Fired ending
+#Failure ending
+#Death ending(s)
+
 #1
 def BreadySetGo():
     print("'Detective! People have been going missing, and a bunch of bakeries have been robbed of all their bread! All signs point towards the Bread-stealing Bandit... He's finally returned. We need you to find him and arrest him! Are you up to the task?'")
