@@ -35,4 +35,44 @@ def mergesort(numbers):
     for num in numbers:
         print(numbers)
         if num1 > num2:
-            
+
+numbers = [random.radiant]
+
+
+
+# [9,3,5,2,6,7,3]
+print(numbers)
+#Set pivit as last #
+#Find L
+def quicksort(n):
+    for i in range(0, len(n)):
+    pivot = n[-1]
+    for num in n:
+        if num > pivot:
+            iPos = i
+            l = num
+            break
+
+    #Find r
+    for i in range(len(n)-1, -1, -1):
+        if n[1] < pivot:
+            r = n [1]
+            rPos = i
+            break
+#Now swap L and R values
+    n[lPos], n[rPos] = n[rPos], n[lPos]
+
+#Check if l index is greater than r index
+    if lPos
+
+
+def quicksort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        less_than_pivot = [x for x in arr[1:] if x <= pivot]
+        greater_than_pivot = [x for x in arr[1:] if x > pivot]
+        return quicksort(less_than_pivot) + [pivot] + quicksort(greater_than_pivot)
+    
+print(quicksort(numbers))
