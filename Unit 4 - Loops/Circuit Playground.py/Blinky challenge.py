@@ -1,3 +1,4 @@
+
 #Drawer # 7
 
 #Imports tools needed to interact with the board
@@ -9,41 +10,94 @@
 #They change brightness based on how much power the recive
 #THe 3 values you set a pixel to are red, green, and blue values
 #while True:    #13 total
-    #cp.pixels[0]=(23, 128, 0)
-    #cp.pixels[1]=(23, 128, 0)
-    #cp.pixels[2]=(23, 128, 0)
-    #cp.pixels[3]=(23, 128, 0)
-    #cp.pixels[4]=(23, 128, 0)
-    #cp.pixels[5]=(23, 128, 0)
-    #cp.pixels[6]=(23, 128, 0)
-    #cp.pixels[7]=(23, 128, 0)
-    #cp.pixels[8]=(23, 128, 0)
-    #cp.pixels[9]=(23, 128, 0)
-    #cp.pixels[10]=(23, 128, 0)
-    #cp.pixels[11]=(23, 128, 0)
-    #cp.pixels[12]=(23, 128, 0)
-    #cp.pixels[13]=(23, 128, 0)
+    #cp.pixels[0]=
+    #cp.pixels[1]=
+    #cp.pixels[2]=
+    #cp.pixels[3]=
+    #cp.pixels[4]=
+    #cp.pixels[5]=
+    #cp.pixels[6]=
+    #cp.pixels[7]=
+    #cp.pixels[8]=
+    #cp.pixels[9]=
+    #cp.pixels[10]=
+    #cp.pixels[11]=
+    #cp.pixels[12]=
+    #cp.pixels[13]=
 
 
 #If you have a single red light on your board, then it's working!
 #...remember to save...
 
+import time
 from adafruit_circuitplayground import cp
 
 #Blinky
-def blink():
-    while True:
-        cp.pixels.fil((23, 128, 0))
-    time.color((23,128,0))
-    import time
+#On, off, on, off
+while True:        #He said write an "if" statement??
+    cp.pixels[0]=(0,255,0)
+    cp.pixels[1]=(0,255,0)
+    cp.pixels[2]=(0,255,0)
+    cp.pixels[3]=(0,255,0)
+    cp.pixels[4]=(0,255,0)
+    cp.pixels[5]=(0,255,0)
+    cp.pixels[6]=(0,255,0)
+    cp.pixels[7]=(0,255,0)
+    cp.pixels[8]=(0,255,0)
+    cp.pixels[9]=(0,255,0)
+    cp.pixels[10]=(0,255,0)
+    cp.pixels[11]=(0,255,0)
+    cp.pixels[12]=(0,255,0)
+    cp.pixels[13]=(0,255,0)
 
-    print(1)
-
+    cp.pixels.fil((0, 255, 0))
+    time.color((0,255,0))
     time.sleep(367)
+    if cp.pixels.fil((0, 255, 0)) == True:
+        break
 
-    print(2)
+while True:
+    cp.pixels[0]=(0.0)
+    cp.pixels[1]=(0.0)
+    cp.pixels[2]=(0.0)
+    cp.pixels[3]=(0.0)
+    cp.pixels[4]=(0.0)
+    cp.pixels[5]=(0.0)
+    cp.pixels[6]=(0.0)
+    cp.pixels[7]=(0.0)
+    cp.pixels[8]=(0.0)
+    cp.pixels[9]=(0.0)
+    cp.pixels[10]=(0.0)
+    cp.pixels[11]=(0.0)
+    cp.pixels[12]=(0.0)
+    cp.pixels[13]=(0.0)
 
-blink()
-#Update: currently blinking red at the wrong speed...
+    cp.pixels.fil((0, 255, 0))
+    time.color((0,255,0))
+    time.sleep(367)
+    if cp.pixels.fil((0, 255, 0)) == True:
+        break
+
+#Come back to this one.
+
 #Woosh
+
+if cp.button_a:
+    print("Button A is pressed!")
+    while True:
+        if cp.button_a:
+             cp.pixels.fill((0, 0, 255))
+             while cp.button_a:
+                 pass
+        else:
+            cp.pixels.fill((0,0,0))
+
+mode = 0 
+
+while True:
+    if cp.button_a:
+        mode = (mode + 1) % 3 
+        print("Mode:", mode)
+        while cp.button_a:
+            pass
 
