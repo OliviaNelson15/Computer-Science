@@ -1,19 +1,49 @@
 from adafruit_circuitplayground import cp
 import time
 
-#Turn each pixel on / off INDIVIDUALLY, #13 total
-#AKA repeatedely set them to desired color, then to black.
-#Try to see what you can do about time. He said to
-#Tell it to wait one second. (Or perhaps not, we already turned them off...)
-#Now figure out how to turn them OFF individually
-#Figure out how to do it in 7 lines
-while True[0,1,2,3,4,5,6,7,8,9]:
+cp.pixels.brightness = 0.3
+
+while True:  #Make it so it happens when button A is pressed.
     if cp.button_a:
-         cp.pixels.fill((5, 3, 87))
-         time.sleep((0,100))
-         while cp.button_a:
-            pass
+        cp.pixels[0] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[0] = ((0, 0, 0))
+        time.sleep(0.100)
+        cp.pixels[1] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[1] = ((0, 0, 0))
+        time.sleep(0.100)
+        cp.pixels[2] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[2] = ((0, 0, 0))
+        time.sleep(0.100)
+        cp.pixels[3] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[3] = ((0, 0, 0))
+        time.sleep(0.100)
+        cp.pixels[4] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[4] = ((0, 0, 0))
+        time.sleep(0.100)
+        cp.pixels[5] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[5] = ((0, 0, 0))
+        time.sleep(0.100)
+        cp.pixels[6] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[6] = ((0, 0, 0))
+        time.sleep(0.100)
+        cp.pixels[7] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[7] = ((0, 0, 0))
+        time.sleep(0.100)
+        cp.pixels[8] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[8] = ((0, 0, 0))
+        time.sleep(0.100)
+        cp.pixels[9] = ((6, 4, 84))
+        time.sleep(0.100)
+        cp.pixels[9] = ((0, 0, 0))
+        time.sleep(0.100)
     else:
         cp.pixels.fill((0,0,0))
-    
-#CURRENTLY UNFINISHED.
