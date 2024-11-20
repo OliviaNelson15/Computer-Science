@@ -1,0 +1,14 @@
+from adafruit_circuitplayground import cp
+import time
+
+cp.pixels.brightness = 0.3
+
+#Police Simulator
+
+while True:
+    cp.pixels.fill((9, 24, 110)) #Blue
+    cp.play_tone(500, 0.500)
+    cp.play_tone(900, 0.500)
+    cp.pixels.fill((110, 9, 9))  #Red
+    cp.play_tone(500, 0.500)
+    cp.play_tone(900, 0.500)
