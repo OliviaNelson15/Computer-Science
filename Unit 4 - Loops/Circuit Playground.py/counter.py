@@ -12,27 +12,19 @@ from adafruit_circuitplayground import cp
 
 #Counter
 
+#He said to create a variable that counts the number of lights that
+#Are on, and add 1 when the a buton is pressed. For button b,
+#Subtract one each time it's pressed.
+
+lol1 = cp.pixels((6, 54, 74))
+lol2 = cp.pixels - 1
+
 while True:
-    cp.pixels.fill((0,0,0))
     if cp.button_a:
-        cp.pixels[0]=((70, 7, 82))
-    if cp.button_a:
-        cp.pixels[1]=((70, 7, 82))
-    if cp.button_a:
-        cp.pixels[2]=((70, 7, 82))
-    if cp.button_a:
-        cp.pixels[3]=((70, 7, 82))
-    if cp.button_a:
-        cp.pixels[4]=((70, 7, 82))
-    if cp.button_a:
-        cp.pixels[5]=((70, 7, 82))
-    if cp.button_a:
-        cp.pixels[6]=((70, 7, 82))
-    if cp.button_a:
-        cp.pixels[7]=((70, 7, 82))
-    if cp.button_a:
-        cp.pixels[8]=((70, 7, 82))
-    if cp.button_a:
-        cp.pixels[9]=((70, 7, 82))
+        lol1[0]
+    
+    
+
 
         #Currently unfinished
+        #This is lowkey giving me a headache, Imma try something else for now
